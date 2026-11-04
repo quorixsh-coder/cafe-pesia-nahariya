@@ -135,7 +135,7 @@ h1,h2,h3,h4{font-family:var(--disp);font-weight:400;line-height:1.12;letter-spac
 
 /* ---------- HERO: the garden through the glasshouse ---------- */
 .hero{position:relative;min-height:max(620px,calc(100svh - 32px));display:flex;align-items:flex-end;overflow:hidden;background:var(--green-3);color:var(--on-g);isolation:isolate}
-.gh-photo{position:absolute;inset:0;z-index:0}
+.gh-photo{position:absolute;inset:0;z-index:0}.gh-ill{position:absolute;z-index:3;left:12px;bottom:10px;font-size:11px;line-height:1;padding:4px 7px;border-radius:3px;background:rgba(0,0,0,.55);color:#fff;letter-spacing:.02em;pointer-events:none}
 .gh-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;transform-origin:50% 55%}
 .gh-light{position:absolute;inset:-12%;z-index:1;pointer-events:none;mix-blend-mode:soft-light}
 .gh-light i{position:absolute;inset:0;opacity:.9;
@@ -472,7 +472,7 @@ dialog::backdrop{background:rgba(15,35,25,.55)}
   .hero-in{padding-bottom:96px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:0 64px;align-items:end}
   .hero-in>*{grid-column:1}
   .hero-in .hero-facts{grid-column:2;grid-row:3/6;align-self:end;flex-direction:column;align-items:flex-start;gap:10px;padding-inline-start:32px;box-shadow:inset -1px 0 0 rgba(220,184,101,.45)}
-  .gh-photo img{object-position:50% 50%}
+  .gh-photo img{object-position:50% 74%}
   .g-grid{grid-template-columns:1fr 1.05fr;gap:96px;align-items:center}
   .tl{padding-inline-start:0;grid-template-columns:repeat(3,1fr);gap:64px 48px}
   .tl::before{display:none}
@@ -576,10 +576,10 @@ html.a-still .gh-wall{display:none}
 <section class="hero" id="top" aria-labelledby="h1">
   <div class="gh-photo">
     <picture>
-      <source media="(min-width:760px)" srcset="og.webp" width="1200" height="630">
-      <img src="garden-gold.webp" alt="עץ קסיה פורח בצהוב זהוב מעל שולחן עץ עגול וכיסאות קש אדומים בגן של בית הקפה" width="780" height="936" fetchpriority="high">
+      <img src="hero-food.webp" alt="שולחן בוקר בצל העצים: שקשוקה במחבת, סלט, לחם ומטבלים, קרואסון פיסטוק וקפה (תמונה להמחשה)" width="1080" height="1920" fetchpriority="high">
     </picture>
   </div>
+  <span class="gh-ill">תמונה להמחשה</span>
   <div class="gh-light" aria-hidden="true"><i></i><i></i></div>
   <div class="gh-scrim" aria-hidden="true"></div>
   <svg class="gh-wall" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
@@ -900,7 +900,7 @@ html.a-still .gh-wall{display:none}
       <h3>תמונות וזכויות</h3>
       <ul>
         <li>צילומי הגן, הטווסים, הפינות ורוב המנות הם של בית הקפה, פורסמו בעמוד הפייסבוק שלו ומשמשים באישור בעל העסק <span class="ph-hold">[לאישור בעל העסק]</span>.</li>
-        <li>תמונות להמחשה: קרואסון פיסטוק, תה נענע, מילקשייק מנגו ושולחן הבראנץ׳. הן מסומנות ״להמחשה״.</li>
+        <li>תמונות להמחשה: תמונת הפתיחה, קרואסון פיסטוק, תה נענע, מילקשייק מנגו ושולחן הבראנץ׳. הן מסומנות ״להמחשה״.</li>
         <li>השם ״קפה פסיה״ והסימנים המסחריים שייכים לבית הקפה.</li>
         <li>גופנים: Frank Ruhl Libre, Assistant ו-Cormorant Garamond מ-Google Fonts, ברישיון SIL Open Font License 1.1.</li>
         <li>האיורים והאייקונים צוירו במיוחד לאתר. אין באתר ספריות או סקריפטים מאתרים חיצוניים.</li>
