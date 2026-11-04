@@ -472,7 +472,7 @@ dialog::backdrop{background:rgba(15,35,25,.55)}
   .hero-in{padding-bottom:96px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:0 64px;align-items:end}
   .hero-in>*{grid-column:1}
   .hero-in .hero-facts{grid-column:2;grid-row:3/6;align-self:end;flex-direction:column;align-items:flex-start;gap:10px;padding-inline-start:32px;box-shadow:inset -1px 0 0 rgba(220,184,101,.45)}
-  .gh-photo img{object-position:50% 74%}
+  .gh-photo img{object-position:50% 92%}
   .g-grid{grid-template-columns:1fr 1.05fr;gap:96px;align-items:center}
   .tl{padding-inline-start:0;grid-template-columns:repeat(3,1fr);gap:64px 48px}
   .tl::before{display:none}
@@ -576,6 +576,7 @@ html.a-still .gh-wall{display:none}
 <section class="hero" id="top" aria-labelledby="h1">
   <div class="gh-photo">
     <picture>
+      <source media="(min-width:760px)" srcset="hero-food-wide.webp" width="2048" height="1152">
       <img src="hero-food.webp" alt="שולחן בוקר בצל העצים: שקשוקה במחבת, סלט, לחם ומטבלים, קרואסון פיסטוק וקפה (תמונה להמחשה)" width="1080" height="1920" fetchpriority="high">
     </picture>
   </div>
